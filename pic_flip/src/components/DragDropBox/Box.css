@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: dashed 1px darkgray;
+    border-radius: 12px;
+    padding: 100px;
+}
+.container-text{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.drop-icon{
+    color: darkgray;
+}
