@@ -8,7 +8,6 @@ const Main = () => {
             <div className='main-container'>
                 <h1>PicFlip!</h1>
                 <Box/>
-                <button className='convert-btn'>Convert</button>
             </div>
         </>
     );
