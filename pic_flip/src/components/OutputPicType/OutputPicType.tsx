@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import React from 'react';
 import './OutputPicType.css'
 
@@ -5,21 +6,22 @@ interface OutPutPicTypeProps {
     InputType: string;
 }
 
-const OutPutPicType: React.FC<OutPutPicTypeProps> = ({  }) => {
-    const outputTypes: string[] = ['PNG', 'JPEG', 'SVG', 'BMP', 'WEBP', 'GIF'];
-
-    return (
+const OutPutPicType: React.FC<OutPutPicTypeProps> = ({ InputType }) => {
+    const outputTypes: string[] = ['PNG', 'JPEG', 'SVG', 'BMP', 'WEBP', 'GIF', 'JPG'];
+    const [extension, setExtension] = useState('');
+ 
+     return (
         <>
             <select placeholder='Drag and drop image first' className='select-box'>
                 {
-                   outputTypes.map((value, key) => {
-                    return (
-                        <>
-                                <option>{value}</option>
-                        </>
-                    )
-                   })
-                }    
+                    outputTypes.map((value) => {
+                        return (
+                            <>
+                                <option disabled={InputType == '.' + value.toLowerCase() ? true : false}>{value}</option>
+                            </>
+                        )
+                    })
+                }
             </select>
         </>
     );

@@ -14,3 +14,9 @@
 .drop-icon{
     color: darkgray;
 }
+
+.current-img-display{
+    height: auto;
+    width: 300px;
+    object-fit: cover;
+}
