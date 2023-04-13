@@ -22,7 +22,6 @@ usvg = "0.31.0"
 png = "0.17.8"
 resvg = "0.31.0"
 image-convert = "0.13.0"
-
 [features]
 # this feature is used for production builds or when `devPath` points to the filesystem
 # DO NOT REMOVE!!
